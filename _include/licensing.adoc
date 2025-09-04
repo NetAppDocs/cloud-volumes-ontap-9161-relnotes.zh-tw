@@ -1,0 +1,30 @@
+= 
+:allow-uri-read: 
+
+
+[role="lead"]
+Cloud Volumes ONTAP有多種授權選項。每個選項都可以讓您選擇符合您需求的消費模式。
+
+新客戶可以使用以下授權選項。
+
+基於容量的許可包:: 基於容量的許可使您能夠按 TiB 容量支付Cloud Volumes ONTAP費用。該許可證與您的NetApp帳戶相關聯，只要許可證提供足夠的容量，您就可以根據許可證為多個系統收費。
++
+--
+基於容量的許可以_包_的形式提供。部署Cloud Volumes ONTAP系統時，您可以根據業務需求從多個授權包中進行選擇。
+
+--
+
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["套餐"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing-charging.html["關於基於容量的許可證的更多信息"^]
+
+Keystone Flex 訂閱:: 一種按需付費的訂閱式服務，為那些喜歡 OpEx 消費模式而非前期資本支出或租賃的用戶提供無縫的混合雲端體驗。
++
+--
+收費基於Keystone Flex 訂閱中一個或多個Cloud Volumes ONTAP HA 對的承諾容量大小。
+
+--
+
+
+對於已經購買許可證或擁有有效市場訂閱的現有客戶，以前的按節點許可模式仍然可用。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["了解有關這些許可選項的更多信息"^]

@@ -1,0 +1,200 @@
+---
+sidebar: sidebar 
+permalink: reference-configs-gcp.html 
+keywords: google, gcp, google cloud platform, explore, standard, premium, byol, paygo, disks, supported, capacity, machine types, sizes, HA, high availability, HA pairs 
+summary: Google Cloud 支援多種Cloud Volumes ONTAP配置。 
+---
+= Google Cloud 中Cloud Volumes ONTAP支援的配置
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Google Cloud 支援多種Cloud Volumes ONTAP配置。
+
+
+
+== 許可證支援的配置
+
+Cloud Volumes ONTAP在 Google Cloud 中可作為單節點系統使用，也可作為高可用性 (HA) 節點對使用，以實現容錯和無中斷操作。
+
+不支援將單節點系統升級到 HA 對。如果您想在單節點系統和 HA 對之間切換，則需要部署新系統並將資料從現有系統複製到新系統。
+
+Cloud Volumes ONTAP可以在雲端提供者提供的預留或按需 VM 執行個體上執行。不支援使用其他 VM 實例類型的解決方案。
+
+[role="tabbed-block"]
+====
+.基於容量的許可證
+--
+[cols="h,d,d,d"]
+|===
+|  | 免費增值 | 已優化^4^ | 基於容量的授權（Essentials 和 Professional） 
+
+
+| 最大系統容量（磁碟+物件儲存） | 500 GiB  a| 
+透過基於容量的許可，每個Cloud Volumes ONTAP系統都支援分層到物件儲存。總分層容量可以擴展到雲端提供者的儲存桶限制。雖然許可證沒有施加容量限制，但您應該遵循 https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["FabricPool最佳實踐"^]確保在配置和管理分層時實現最佳效能、可靠性和成本效率。
+
+
+
+| 支援的機器類型^1^  a| 
+* n1-標準-8 ^1^
+* n1-標準-32 ^1^
+* n2-標準-4
+* n2-標準-8
+* n2-標準-16
+* n2-標準-32
+* n2-標準-48
+* n2-標準-64
+
+ a| 
+* n2-標準-4
+* n2-標準-8
+
+ a| 
+* n1-標準-8 ^1^
+* n1-標準-32 ^1^
+* n2-標準-4
+* n2-標準-8
+* n2-標準-16
+* n2-標準-32
+* n2-標準-48
+* n2-標準-64
+
+
+
+
+| 支援的磁碟類型^2^ 3+| 平衡持久性磁碟 ^3^、效能 (SSD) 持久性磁碟 ^3^ 和標準 (HDD) 持久性磁碟。 
+|===
+筆記：
+
+. ^1^ 在 Google Cloud 中部署Cloud Volumes ONTAP的新實例時， BlueXP上不再可選擇 n1 系列機器。 n1 系列機器將保留，並且僅在較舊的現有系統中支援。從 9.8 版本開始，Google Cloud 才支援Cloud Volumes ONTAP的新部署。我們建議您切換到與Cloud Volumes ONTAP 9.8 及更高版本相容的 n2 系列機器。不過，n1 系列機器將可用於透過 API 進行的新部署。
++
+新的Cloud Volumes ONTAP系統不再支援 custom-4-16384 機器類型。如果您現有的系統正在此機器類型上運行，您可以繼續使用它，但我們建議切換到 n2-standard-4 機器類型。
+
+. ^2^ 磁碟限制可防止您僅透過使用磁碟就達到最大系統容量限制。您可以透過以下方式達到容量限制 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["將非活動資料分層到物件存儲"^]。
++
+link:reference-limits-gcp.html["詳細了解 Google Cloud 中的磁碟限制"] 。
+
+. ^3^ 使用平衡持久性磁碟和效能（SSD）持久性磁碟時，可啟用增強寫入效能。
++
+從Cloud Volumes ONTAP 9.13.0 開始，_Flash Cache_、高寫入速度以及更高的 8,896 位元組最大傳輸單元 (MTU) 可用於下列 HA 對部署實例：
+
++
+** n2-標準-16
+** n2-標準-32
+** n2-標準-48
+** n2-標準-64
++
+您可以在部署符合條件的實例類型時啟用_Flash Cache_和高寫入速度。若要啟用更高的 8,896 位元組最大傳輸單元，您必須為部署選擇 VPC-1、VPC-2 或 VPC-3。更高的 MTU 可實現更高的網路吞吐量。有關啟動這些部署的更多信息，請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html#launching-an-ha-pair-in-google-cloud["在 Google Cloud 中啟動 HA 對"]。
+
++
+
+NOTE: _Flash 快取_、高寫入模式和 8,896 的 MTU 依賴功能，無法在配置的實例中單獨停用。
+
+
+
+. ^4^ 自 2025 年 8 月 11 日起， Cloud Volumes ONTAP Optimized 授權將被棄用，並且將不再可在 Google Cloud 市場中以即用即付 (PAYGO) 訂閱的方式購買或續訂。有關信息，請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Cloud Volumes ONTAP的新功能"^]。
+
+
+--
+.基於節點的許可證
+--
+[cols="h,d,d,d,d"]
+|===
+|  | PAYGO 探索 | PAYGO 標準 | PAYGO 保費 | 基於節點的 BYOL 
+
+
+| 最大系統容量（磁碟+物件儲存） | 2 TB ^2^ | 10 TiB | 368 TiB | 每個許可證 368 TiB 
+
+
+| 支援的機器類型^3^  a| 
+* n2-標準-4
+
+ a| 
+* n1-標準-8 ^3^
+* n2-標準-8
+
+ a| 
+* n1-標準-32 ^3^
+* n2-標準-16
+* n2-標準-32
+* n2-標準-48
+* n2-標準-64
+
+ a| 
+* n1-標準-8 ^3^
+* n1-標準-32 ^3^
+* n2-標準-4
+* n2-標準-8
+* n2-標準-16
+* n2-標準-32
+* n2-標準-48
+* n2-標準-64
+
+
+
+
+| 支援的磁碟類型 4+| 平衡持久性磁碟 ^4^、效能 (SSD) 持久性磁碟 ^4^ 和標準 (HDD) 持久性磁碟。 
+|===
+筆記：
+
+. ^1^ 磁碟限制可以防止您僅透過使用磁碟就達到最大系統容量限制。您可以透過以下方式達到容量限制 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["將非活動資料分層到物件存儲"^]。
++
+link:reference-limits-gcp.html["詳細了解 Google Cloud 中的磁碟限制"] 。
+
+. ^2^ PAYGO Explore 不支援將資料分層到 Google Cloud Storage。
+. ^3^ 在 Google Cloud 中部署Cloud Volumes ONTAP的新實例時， BlueXP上不再可選擇 n1 系列機器。 n1 系列機器將保留，並且僅在較舊的現有系統中支援。從 9.8 版本開始，Google Cloud 才支援Cloud Volumes ONTAP的新部署。我們建議您切換到與Cloud Volumes ONTAP 9.8 及更高版本相容的 n2 系列機器。然而，n1 系列機器將可用於透過 API 執行的新部署。
++
+新的Cloud Volumes ONTAP系統不再支援 custom-4-16384 機器類型。如果您現有的系統正在此機器類型上運行，您可以繼續使用它，但我們建議切換到 n2-standard-4 機器類型。
+
+. ^4^ 使用平衡持久性磁碟和效能（SSD）持久性磁碟時，可啟用增強寫入效能。
+
+
+BlueXP介面顯示了標準和 BYOL 支援的額外機器類型：n1-highmem-4。然而，這種機器類型並不適合生產環境。我們僅將其用於特定的實驗室環境。
+
+從Cloud Volumes ONTAP軟體版本 9.13.0 開始，以下 HA 對部署實例可以使用_Flash Cache_、高寫入速度以及更高的 8,896 位元組最大傳輸單元 (MTU)：
+
+* n2-標準-16
+* n2-標準-32
+* n2-標準-48
+* n2-標準-64
+
+
+您可以在部署符合條件的實例類型時啟用_Flash Cache_和高寫入速度。若要啟用更高的 8,896 位元組最大傳輸單元，您必須為部署選擇 VPC-1、VPC-2 或 VPC-3。更高的 MTU 可實現更高的網路吞吐量。有關啟動這些部署的更多信息，請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html#launching-an-ha-pair-in-google-cloud["在 Google Cloud 中啟動 HA 對"]。
+
+
+NOTE: _Flash 快取_、高寫入模式和 8,896 的 MTU 依賴功能，無法在配置的實例中單獨停用。
+
+--
+====
+有關特定機器類型的更多信息，請參閱 Google Cloud 文件：
+
+* https://cloud.google.com/compute/docs/general-purpose-machines#n1_machines["n1系列通用機型"^]
+* https://cloud.google.com/compute/docs/general-purpose-machines#n2_series["N2系列通用機型"^]
+
+
+
+
+== 支援的磁碟大小
+
+在 Google Cloud 中，一個聚合最多可以包含 6 個類型和大小相同的磁碟。支援以下磁碟大小：
+
+* 100GB
+* 500GB
+* 1TB
+* 2TB
+* 4TB
+* 8TB
+* 16TB
+* 64TB
+
+
+
+
+== 支持的區域
+
+有關 Google Cloud 區域支持，請參閱 https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes 全球區域"^]。

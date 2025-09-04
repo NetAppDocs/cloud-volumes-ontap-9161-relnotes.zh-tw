@@ -1,0 +1,45 @@
+---
+indexpage:
+  title: Cloud Volumes ONTAP 9.16.1 發行說明
+  summary: 這些發行說明描述了Cloud Volumes ONTAP 9.16.1 的新功能、限制和已知問題。
+  keywords: RN, CVO, release notes Cloud Volumes ONTAP
+  lead: 這些發行說明描述了Cloud Volumes ONTAP 9.16.1 的新功能、限制和已知問題。
+  tiles:
+  - title: 開始
+    links:
+    - title: 什麼是新的
+      url: reference-new.html
+    - title: 許可概述
+      url: concept-licensing.html
+  - title: 亞馬遜網路服務
+    links:
+    - title: 支援的配置
+      url: reference-configs-aws.html
+    - title: 儲存限制
+      url: reference-limits-aws.html
+    - title: 限制
+      url: reference-limitations-aws.html
+  - title: Google雲
+    links:
+    - title: 支援的配置
+      url: reference-configs-gcp.html
+    - title: 儲存限制
+      url: reference-limits-gcp.html
+    - title: 限制
+      url: reference-limitations-gcp.html
+  - title: 微軟 Azure
+    links:
+    - title: 支援的配置
+      url: reference-configs-azure.html
+    - title: 儲存限制
+      url: reference-limits-azure.html
+    - title: 限制
+      url: reference-limitations-azure.html
+  - title: 部落格和社區
+    links:
+    - title: NetApp社群
+      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+    - title: BlueXP博客
+      url: https://bluexp.netapp.com/blog
+    - title: 雲端網路研討會
+      url: https://bluexp.netapp.com/events
