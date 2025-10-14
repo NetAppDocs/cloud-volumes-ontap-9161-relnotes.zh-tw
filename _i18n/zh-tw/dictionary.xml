@@ -788,22 +788,17 @@
   <block id="9889b7a9df56580016f59ccd942fb1d1" category="inline-link">BlueXP發行說明</block>
   <block id="4bdb15bfe1bad472d818dc31e8f53185" category="paragraph">BlueXP的最新版本還引入了其他功能和增強功能。查看<block ref="c7887e85c6060ae2594d873a0f2ae025" category="inline-link-rx"></block>了解詳情。</block>
   <block id="804568356abbd917c2b16399c1d74469" category="section-title">9.16.1 P5（2025 年 7 月 28 日）</block>
-  <block id="b18cddec63bbac4d331412b33193f19d" category="paragraph">9.16.1 P5 修補程式現已可在 Azure 和 Google Cloud 中為Cloud Volumes ONTAP部署和升級。但此版本暫不支援在 AWS 中部署和升級。 BlueXPBlueXP提示您將現有系統升級至此修補程式版本。</block>
   <block id="e890150484086859b9a5078abe9c6f20" category="inline-link-macro">查看 P5 補丁修復的錯誤列表</block>
   <block id="594276b7568f8909a2e4145873978b46" category="paragraph"><block ref="be3338d2845a087c634560014a857fc0" category="inline-link-macro-rx"></block> （需要登入NetApp支援站點）。</block>
-  <block id="c40872b813fc8acca04c5e909c600b0c" category="paragraph">9.16.1 P4 修補程式現已可在 Azure 和 Google Cloud 中為Cloud Volumes ONTAP部署和升級。但此版本暫不支援在 AWS 中部署和升級。 BlueXPBlueXP提示您將現有系統升級至此修補程式版本。</block>
   <block id="cae74b75cb879fa6011c4bc1e9acafed" category="inline-link-macro">查看 P4 補丁修復的錯誤列表</block>
   <block id="0a8093de16aa3f6ac64c7b6c07e3a0e9" category="paragraph"><block ref="4287819b7b6c3d729049717a25b7809c" category="inline-link-macro-rx"></block> （需要登入NetApp支援站點）。</block>
   <block id="2b0112a3fe8db72b28cea3e10ddba401" category="section-title">9.16.1 P3（2025 年 5 月 29 日）</block>
-  <block id="79d2490a076742db13fbcc8f0776a458" category="paragraph">9.16.1 P3 修補程式現已可在 Azure 和 Google Cloud 中為Cloud Volumes ONTAP部署和升級。但此版本暫不支援在 AWS 中部署和升級。 BlueXPBlueXP提示您將現有系統升級至此修補程式版本。</block>
   <block id="4c7cf73669136d536c96ca7317eb5ceb" category="inline-link-macro">查看 P3 補丁修復的錯誤列表</block>
   <block id="4beb9f52d4c281cb89fd47e4aaa780cf" category="paragraph"><block ref="77df283c529cda018d08e767dda3eebd" category="inline-link-macro-rx"></block> （需要登入NetApp支援站點）。</block>
   <block id="26207601cd717bed61f9a69941108f87" category="section-title">9.16.1 P2（2025 年 4 月 17 日）</block>
-  <block id="c4792f112f7f491e5d7e61fba2f33329" category="paragraph">9.16.1 P2 修補程式現已可在 Azure 和 Google Cloud 中為Cloud Volumes ONTAP部署和升級。但此版本暫不支援在 AWS 中部署和升級。 BlueXPBlueXP提示您將現有系統升級至此修補程式版本。</block>
   <block id="ce5d0c77f167b881391469fc27895727" category="inline-link-macro">查看 P2 補丁修復的錯誤列表</block>
   <block id="448f9263b6e5828ecbede3a8f78d17eb" category="paragraph"><block ref="6454149a5f999950d701a0bf861b958d" category="inline-link-macro-rx"></block> （需要登入NetApp支援站點）。</block>
   <block id="008c5c510153b3136387ddcd33bc112c" category="section-title">9.16.1 P1（2025 年 4 月 17 日）</block>
-  <block id="3b3592b54b76bb5d60a585ffacea4e61" category="paragraph">9.16.1 P1 修補程式現已可在 Azure 和 Google Cloud 中為Cloud Volumes ONTAP部署和升級。但此版本暫不支援在 AWS 中部署和升級。 BlueXPBlueXP提示您將現有系統升級至此修補程式版本。</block>
   <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">查看 P1 補丁修復的錯誤列表</block>
   <block id="664e6349e84880f6407173721fad810a" category="paragraph"><block ref="e1914bcb543b75972205a0cc76dbb433" category="inline-link-macro-rx"></block> （需要登入NetApp支援站點）。</block>
   <block id="2bb6251babdc5f589145b9c5611ca36d" category="paragraph">現在您可以使用Cloud Volumes ONTAP 9.16.1 通用可用性版本在 Azure 和 Google Cloud 中進行部署和升級。但此版本暫不支援在 AWS 中部署和升級。 BlueXP</block>
@@ -856,13 +851,18 @@
   <block id="9a3a0c4b2afbb088e029484d4b34ba8b" category="sidebar">Google Cloud 的局限性</block>
   <block id="b67ce24b0ef9db5e8910cc39a69b1ef6" category="sidebar">雲端提供者集成</block>
   <block id="9c393d4bfb237e3ba5203e42fabb28ff" category="section-title">9.16.1 P7（2025年10月9日）</block>
-  <block id="009aa3203761cda0d39ea2b2c91e3158" category="paragraph">9.16.1 P7 修補程式現已可在 Azure 和 Google Cloud 中為Cloud Volumes ONTAP部署和升級。但此版本暫不支援在 AWS 中部署和升級。 BlueXPNetApp Console將提示您將現有系統升級至此修補程式版本。</block>
   <block id="7fa6a95154192207488dcc8bf13f9366" category="inline-link-macro">查看 P7 補丁修復的錯誤列表</block>
   <block id="b0fd363279f6fc3c8da30530007bf8ac" category="paragraph"><block ref="e68264e64550c0d4882c6db0a4e9fef2" category="inline-link-macro-rx"></block> （需要登入NetApp支援站點）。</block>
   <block id="fd8fec1b27dfba5a8c3a626a4c411930" category="section-title">9.16.1 P6（2025年10月9日）</block>
-  <block id="09d709c1e6e5ba34321c4b3f78f75027" category="paragraph">9.16.1 P6 修補程式現已可在 Azure 和 Google Cloud 中為Cloud Volumes ONTAP部署和升級。但此版本暫不支援在 AWS 中部署和升級。 BlueXPNetApp Console將提示您將現有系統升級至此修補程式版本。</block>
   <block id="4d90d21642c7222312363da000d7409f" category="inline-link-macro">查看 P6 補丁修復的錯誤列表</block>
   <block id="af75259c5a2eff34005b24d9dce1ac52" category="paragraph"><block ref="0147ce621a7d7c8941a69843e83fe4b1" category="inline-link-macro-rx"></block> （需要登入NetApp支援站點）。</block>
   <block id="2edd6fc1fef5dd32d257e3e2cc619d02" category="section-title">9.16.1 P4（2025 年 7 月 08 日）</block>
   <block id="a25096dc77a4ccda62f4f74b9b6af779" category="section-title">9.16.1 GA（2025 年 3 月 06 日）</block>
+  <block id="d11afd8a15009870a33a38f21c714325" category="paragraph">Cloud Volumes ONTAP 9.16.1 P7 修補程式現在可在 Azure 和 Google Cloud 中升級。但是，此版本在 AWS 中無法升級。NetApp Console將提示您將現有系統升級至此修補程式版本。</block>
+  <block id="c02742e5b118cb609e694b1327f4f419" category="paragraph">Cloud Volumes ONTAP 9.16.1 P6 修補程式現在可在 Azure 和 Google Cloud 中升級。但是，此版本在 AWS 中無法升級。NetApp Console將提示您將現有系統升級至此修補程式版本。</block>
+  <block id="189d886c9544b7a83965c41721db1728" category="paragraph">Cloud Volumes ONTAP 9.16.1 P5 修補程式現在可在 Azure 和 Google Cloud 中升級。但是，此版本在 AWS 中無法升級。BlueXP提示您將現有系統升級至此修補程式版本。</block>
+  <block id="962caffd9246a2aab713373646816df3" category="paragraph">Cloud Volumes ONTAP 9.16.1 P4 修補程式現在可在 Azure 和 Google Cloud 中升級。但是，此版本在 AWS 中無法升級。BlueXP提示您將現有系統升級至此修補程式版本。</block>
+  <block id="565921380c4d63d3501c50893bfeb5ba" category="paragraph">Cloud Volumes ONTAP 9.16.1 P3 修補程式現在可在 Azure 和 Google Cloud 中升級。但是，此版本在 AWS 中無法升級。BlueXP提示您將現有系統升級至此修補程式版本。</block>
+  <block id="70249f1b3f974d77b07624fb6202aa10" category="paragraph">Cloud Volumes ONTAP 9.16.1 P2 修補程式現在可在 Azure 和 Google Cloud 中升級。但是，此版本在 AWS 中無法升級。BlueXP提示您將現有系統升級至此修補程式版本。</block>
+  <block id="4e86ac893c0dda1685d140ff4d3d599d" category="paragraph">Cloud Volumes ONTAP 9.16.1 P1 修補程式現在可在 Azure 和 Google Cloud 中升級。但是，此版本在 AWS 中無法升級。BlueXP提示您將現有系統升級至此修補程式版本。</block>
 </blocks>
