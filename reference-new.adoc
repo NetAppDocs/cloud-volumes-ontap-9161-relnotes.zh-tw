@@ -16,13 +16,21 @@ summary: Cloud Volumes ONTAP 9.16.1 包含一項新的增強功能。
 [role="lead"]
 Cloud Volumes ONTAP 9.16.1 包含新的增強功能。
 
-BlueXP的最新版本還引入了其他功能和增強功能。查看 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["BlueXP發行說明"^]了解詳情。
+NetApp Console的最新版本還引入了其他功能和增強功能。查看 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Cloud Volumes ONTAP發行說明"^]了解詳情。
+
+
+
+== 9.16.1 P8（2025年10月16日）
+
+Cloud Volumes ONTAP 9.16.1 P8 修補程式現在可在 Azure 和 Google Cloud 中升級。但是，此版本在 AWS 中無法升級。控制台將提示您將現有系統升級到此補丁版本。
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.16.1P8["查看 P8 補丁修復的錯誤列表"^]（需要登入NetApp支援站點）。
 
 
 
 == 9.16.1 P7（2025年10月9日）
 
-Cloud Volumes ONTAP 9.16.1 P7 修補程式現在可在 Azure 和 Google Cloud 中升級。但是，此版本在 AWS 中無法升級。NetApp Console將提示您將現有系統升級至此修補程式版本。
+Cloud Volumes ONTAP 9.16.1 P7 修補程式現在可在 Azure 和 Google Cloud 中升級。但是，此版本在 AWS 中無法升級。控制台將提示您將現有系統升級到此補丁版本。
 
 link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.16.1P7["查看 P7 補丁修復的錯誤列表"^] （需要登入NetApp支援站點）。
 
@@ -30,7 +38,7 @@ link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/
 
 == 9.16.1 P6（2025年10月9日）
 
-Cloud Volumes ONTAP 9.16.1 P6 修補程式現在可在 Azure 和 Google Cloud 中升級。但是，此版本在 AWS 中無法升級。NetApp Console將提示您將現有系統升級至此修補程式版本。
+Cloud Volumes ONTAP 9.16.1 P6 修補程式現在可在 Azure 和 Google Cloud 中升級。但是，此版本在 AWS 中無法升級。控制台將提示您將現有系統升級到此補丁版本。
 
 link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.16.1P6["查看 P6 補丁修復的錯誤列表"^] （需要登入NetApp支援站點）。
 
