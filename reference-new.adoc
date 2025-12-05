@@ -20,6 +20,14 @@ NetApp Console的最新版本也引進了新的Cloud Volumes ONTAP功能。欲�
 
 
 
+== 9.16.1 P9（2025年12月4日）
+
+Cloud Volumes ONTAP 9.16.1 P9 修補程式現已可供所有雲端提供者升級。控制台將提示您將現有系統升級到此補丁版本。
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.16.1P9["查看 P9 補丁修復的錯誤列表"^]（需要登入NetApp支援站點）。
+
+
+
 == 9.16.1 P8（2025年10月16日）
 
 Cloud Volumes ONTAP 9.16.1 P8 修補程式現已可供所有雲端提供者升級。控制台將提示您將現有系統升級到此補丁版本。

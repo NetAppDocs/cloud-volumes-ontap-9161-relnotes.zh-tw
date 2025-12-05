@@ -869,4 +869,8 @@
   <block id="1d3b6bcaa662fb815c64aec0bffd0aa5" category="inline-link-macro">了解主機通知您時如何進行升級</block>
   <block id="c1c95a79ba017a924aa27e6d62ce3148" category="paragraph"><block ref="96dd1055c54322c16d3691cb1f44b801" category="inline-link-macro-rx"></block>。</block>
   <block id="31df6bd033eb0ed1992ab01c69319f02" category="paragraph">您可以在 AWS、Azure 和 Google Cloud 中從 9.15.1 版本升級到Cloud Volumes ONTAP 9.16.1。控制台將提示您將符合條件的Cloud Volumes ONTAP系統升級至此版本。</block>
+  <block id="7ef6df0938a1a21d65adf91c16ee4ada" category="section-title">9.16.1 P9（2025年12月4日）</block>
+  <block id="a3d80265a5f445fde1d382318e209365" category="paragraph">Cloud Volumes ONTAP 9.16.1 P9 修補程式現已可供所有雲端提供者升級。控制台將提示您將現有系統升級到此補丁版本。</block>
+  <block id="4b99ccc66c896711e2667fd1c7cc5a70" category="inline-link-macro">查看 P9 補丁修復的錯誤列表</block>
+  <block id="7f6e1fb823b042d6f89adc943de0068d" category="paragraph"><block ref="d4eee5025c7b384f4cdd08404339f7d4" category="inline-link-macro-rx"></block>（需要登入NetApp支援站點）。</block>
 </blocks>
