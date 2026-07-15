@@ -18,6 +18,7 @@ summary: 本頁介紹NetApp如何與雲端供應商合作解決可能出現的�
 
 
 
+[[collaborative-support-best-practices]]
 == 協作支持最佳實踐
 
 NetApp致力於向被授權者提供支持，並將在被授權者報告Cloud Volumes ONTAP技術支援問題時採取商業上合理的努力來解決該問題。  NetApp和適用的雲端供應商對彼此的授權軟體或基礎架構沒有任何直接支援義務。
@@ -26,6 +27,7 @@ NetApp已實施旨在與適用的雲端供應商聯繫的工具，以解決可�
 
 
 
+[[azure-maintenance-events]]
 == Azure 維護事件
 
 Microsoft 計畫並以程式方式宣布其 Azure 虛擬機器 (VM) 基礎架構上的維護事件，這些事件可能會影響Cloud Volumes ONTAP VM。這些活動將在維護時段前 15 分鐘宣布。

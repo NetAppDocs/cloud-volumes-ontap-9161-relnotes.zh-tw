@@ -18,6 +18,7 @@ AWS 支援多種Cloud Volumes ONTAP配置。
 
 
 
+[[supported-number-of-nodes]]
 == 支援的節點數
 
 Cloud Volumes ONTAP在 AWS 中可作為單節點系統使用，也可作為高可用性 (HA) 節點對使用，以實現容錯和無中斷操作。
@@ -26,12 +27,14 @@ Cloud Volumes ONTAP在 AWS 中可作為單節點系統使用，也可作為高�
 
 
 
+[[supported-storage]]
 == 支援的存儲
 
 Cloud Volumes ONTAP支援多種類型的 EBS 磁碟和 S3 物件存儲，用於資料分層。最大儲存容量由您選擇的許可證決定。
 
 
 
+[[storage-support-by-license]]
 === 透過許可證支援存儲
 
 每個許可證支援不同的最大系統容量。最大系統容量包括基於磁碟的儲存以及用於資料分層的物件儲存。  NetApp不支援超出此限制。
@@ -112,6 +115,7 @@ Cloud Volumes ONTAP支援多種類型的 EBS 磁碟和 S3 物件存儲，用於�
 ====
 
 
+[[supported-disk-sizes]]
 === 支援的磁碟大小
 
 在 AWS 中，一個聚合最多可以包含 6 個大小相同的磁碟。但是，如果您的配置支援 Amazon EBS 彈性磁碟區功能，則聚合最多可以包含 8 個磁碟。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-aws-elastic-volumes.html["了解有關彈性卷支持的更多信息"^]
@@ -154,13 +158,14 @@ Cloud Volumes ONTAP支援多種類型的 EBS 磁碟和 S3 物件存儲，用於�
 |===
 
 
+[[supported-ec2-compute]]
 == 支援的 EC2 計算
 
 每個Cloud Volumes ONTAP授權支援不同的 EC2 執行個體類型。為了您的方便，下表顯示了每個支援的執行個體類型的 vCPU、RAM 和頻寬。 https://aws.amazon.com/ec2/instance-types/["您應該參考 AWS 以獲取有關 EC2 執行個體類型的最新完整詳細信息"^] 。
 
 Cloud Volumes ONTAP可以在預留或按需 EC2 執行個體上執行。不支援使用其他實例類型的解決方案。
 
-下表中顯示的頻寬與每個執行個體類型記錄的 AWS 限制相符。這些限制與Cloud Volumes ONTAP所能提供的限制並不完全一致。有關預期效能，請參閱 https://www.netapp.com/pdf.html?item=/media/9088-tr4383pdf.pdf["NetApp技術報告 4383：Amazon Web Services 中Cloud Volumes ONTAP與應用程式工作負載的效能特徵"^]。
+下表所示的頻寬與每種執行個體類型的 AWS 文件化限制相符。這些限制與 Cloud Volumes ONTAP 所能提供的效能並不完全一致。有關預期效能，請參閱 https://www.netapp.com/pdf.html?item=/media/9088-tr4383.pdf["NetApp技術報告 4383：Amazon Web Services 中Cloud Volumes ONTAP與應用程式工作負載的效能特徵"^]。
 
 [cols="8*"]
 |===
@@ -257,6 +262,7 @@ AWS 本機區域中的這些執行個體類型不支援高寫入速度。
 
 
 
+[[c4-m4-and-r4-instances-no-longer-supported]]
 === 不再支援 c4、m4 和 r4 實例
 
 Cloud Volumes ONTAP不再支援 AWS 中的 c4、m4 和 r4 EC2 執行個體類型。如果您的系統在 c4、m4 或 r4 執行個體上執行，請變更為 c5、m5 或 r5 實例。除非您變更實例類型，否則您無法升級到此版本。
@@ -272,6 +278,7 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-in
 
 
 
+[[supported-regions]]
 == 支持的區域
 
 有關 AWS 區域支持，請參閱 https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes 全球區域"^]。

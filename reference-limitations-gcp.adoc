@@ -18,6 +18,7 @@ summary: 已知限制標識了該產品的此版本不支援或無法與其正�
 
 
 
+[[limitation-with-packet-mirroring]]
 == 資料包鏡像的限制
 
 https://cloud.google.com/vpc/docs/packet-mirroring["資料包鏡像"^]必須在部署Cloud Volumes ONTAP的 Google Cloud VPC 中停用。
@@ -26,6 +27,7 @@ https://cloud.google.com/vpc/docs/packet-mirroring["資料包鏡像"^]必須在�
 
 
 
+[[google-private-service-connect-limitations]]
 == Google Private Service Connect 限制
 
 如果你利用 https://cloud.google.com/vpc/docs/private-service-connect["Google Private Service Connect"^]在部署Cloud Volumes ONTAP 的VPC 中，您需要實作 DNS 記錄，將流量轉送到所需的 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["BlueXP API 端點"^]。

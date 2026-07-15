@@ -18,6 +18,7 @@ Google Cloud 支援多種Cloud Volumes ONTAP配置。
 
 
 
+[[supported-configurations-by-license]]
 == 許可證支援的配置
 
 Cloud Volumes ONTAP在 Google Cloud 中可作為單節點系統使用，也可作為高可用性 (HA) 節點對使用，以實現容錯和無中斷操作。
@@ -179,6 +180,7 @@ NOTE: _Flash 快取_、高寫入模式和 8,896 的 MTU 依賴功能，無法在
 
 
 
+[[supported-disk-sizes]]
 == 支援的磁碟大小
 
 在 Google Cloud 中，一個聚合最多可以包含 6 個類型和大小相同的磁碟。支援以下磁碟大小：
@@ -195,6 +197,7 @@ NOTE: _Flash 快取_、高寫入模式和 8,896 的 MTU 依賴功能，無法在
 
 
 
+[[supported-regions]]
 == 支持的區域
 
 有關 Google Cloud 區域支持，請參閱 https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes 全球區域"^]。
