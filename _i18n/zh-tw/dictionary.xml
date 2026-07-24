@@ -885,4 +885,8 @@
   <block id="8a1258bf37cf0340b92dd9f9ca39acfa" category="inline-link-macro">檢視 P12 修補程式中已修正的錯誤清單</block>
   <block id="3eb4c2a1aa053b1bc1ac0f0197a04e1f" category="paragraph"><block ref="e9182f1c0f87f3aabe0d9590748d2e3a" category="inline-link-macro-rx"></block>（需要登入 NetApp Support Site）。</block>
   <block id="fb83bdf454bf964031306f46d967b051" category="paragraph">下表所示的頻寬與每種執行個體類型的 AWS 文件化限制相符。這些限制與 Cloud Volumes ONTAP 所能提供的效能並不完全一致。有關預期效能，請參閱<block ref="f9e25e1e3616de01564541c204317f8f" category="inline-link-rx"></block>。</block>
+  <block id="cc52c7e517c1e6b39883e4863ebf664a" category="section-title">9.16.1 P13（2026 年 7 月 22 日）</block>
+  <block id="13cccf82829c452d3aec19fec4f5c89c" category="paragraph">Cloud Volumes ONTAP 9.16.1 P13 修補程式現已開放給所有雲端服務供應商升級。主控台將提示您將現有系統升級至此修補程式版本。</block>
+  <block id="fc8e67b0bd5bbf26831e34a1066ac996" category="inline-link-macro">檢視 P13 修補程式中已修正的錯誤清單</block>
+  <block id="bf44c877f50abe9dc5ccb90ef97cdffa" category="paragraph"><block ref="0d259c288204b1a79febc5f98a1e71dc" category="inline-link-macro-rx"></block>（需要登入 NetApp Support Site）。</block>
 </blocks>
